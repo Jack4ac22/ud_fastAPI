@@ -50,3 +50,7 @@ def create_comment(blog: BlogModel, id: int,
             'comment_id': comment_id,
             'content': content,
             'version': v}
+
+
+def required_functionality():
+    return {'message': 'tets message'}
