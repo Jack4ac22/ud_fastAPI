@@ -10,6 +10,12 @@ router = APIRouter(
 products = ['watch', 'camera', 'phone']
 
 
+@router.post('/new')
+def create_product(name: str = Form(...)):
+    products.append(name)
+    return products
+
+
 @router.get('/all')
 def get_all_products():
     # return products
